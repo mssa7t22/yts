@@ -529,9 +529,17 @@ section .grid #popular, section .grid i{
 
 @media (max-width:767px) {
 
+
+
   nav .nav-items {
     padding:0em 0.7em;
 
+  }
+
+  nav .nav-items .nav-list ul {
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
   }
 
   nav .nav-items .nav-text {
