@@ -204,7 +204,7 @@ section .grid i
     color: var(--clr-primary)
 }
 
-.movies {
+.dark-bg1 {
 
 background-color: var(--clr-dark);
 }
@@ -216,7 +216,7 @@ justify-content: center;
 
 
 
-div hr{
+.movies hr{
 margin: 0 auto;
 position: relative;
 top: -0.6em;
@@ -251,22 +251,89 @@ opacity: 0.3;
   margin-top: -4px;
 }
 
-.movies-container .movie-item p {
+.movies-container .movie-item a {
   color: var(--clr-white);
+  display: block;
   font-weight: bold;
+  font-size: 0.9em;
+  -webkit-transition: color .15s ease-in-out;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  top: -3px;
+  left:2px;
 }
 
-.movies-container .movie-item span {
+.movies-container .movie-item :hover {
+  color: var(--clr-secondary);
+}
+
+.movies-container .movie-item p {
   color: #919191 !important;
   font-size: 0.85em;
   position: relative;
-  top: -3px;
+  top: -1px;
 }
 
 
 
+.dark-bg2 {background-color: #171717 !important;}
+
+.movies #latest-text {
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 5em;
+  color: var(--clr-white);
+  font-size: 1.15em;
+  font-weight: 700;
+}
 
 
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #2f2f2f;
+  margin: 0 auto;
+}
+
+.footer-nav ul {
+margin-top: 1.5em;
+text-align: center;
+}
+
+.footer-nav ul li {
+  display: inline-block;
+  padding: 0px 0.3em;
+  text-align: center;
+}
+
+.footer-nav ul li a {
+color: #919191;
+font-size: 0.85em;
+font-weight: bold;
+}
+
+.footer-nav ul li a:hover {
+color: var(--clr-white);
+}
+
+
+
+.white {color: var(--clr-white);}
+
+.footer-nav #lower-links {
+margin-top: 0.1em;
+margin-bottom: 0.5em;
+text-align: center;
+}
+
+.footer-nav p {
+  margin-bottom: 0.7em;
+  color: var(--clr-white);
+  font-size: 0.8em;
+}
 
 
 
@@ -545,7 +612,7 @@ section .grid #popular, section .grid i{
   nav .nav-items .nav-list .mobile .nav-list-icons {
     font-size: 1.28em;
     margin-top: 0px;
-    padding-left: 12px !important;
+    padding-left: 13px !important;
   }
 
   hr{width: 100%;}
