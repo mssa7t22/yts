@@ -521,8 +521,8 @@ section .grid #popular, section .grid i{
   }
 
   nav .nav-items .logo img {
-    width: 90px;
-    height: 28px;
+    width: 90px !important;
+    height: 28px !important;
   }
 
   nav .nav-items .nav-list .nav-list-icons {
