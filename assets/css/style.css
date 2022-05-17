@@ -33,15 +33,20 @@ nav {
 }
 
 .nav-items {
-  padding:0.36em 4.5em;
+  padding:0.28em 4.6em;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
 
-nav .nav-items .logo{
+nav .nav-items .logo {
     margin-right: auto;
+}
+
+nav .nav-items .logo img{
+    max-width: 127.3px;
+    height: auto;
 }
 
 .nav-items .nav-search  {
@@ -520,10 +525,6 @@ section .grid #popular, section .grid i{
 
   }
 
-  nav .nav-items .logo img {
-    width: 90px !important;
-    height: 28px !important;
-  }
 
   nav .nav-items .nav-list .nav-list-icons {
     font-size: 1.3em;
