@@ -45,8 +45,8 @@ nav .nav-items .logo {
 }
 
 nav .nav-items .logo img{
-    max-width: 127.3px;
-    height: auto;
+  width: 127.3px;
+  height: 40px;
 }
 
 .nav-items .nav-search  {
@@ -220,14 +220,14 @@ div hr{
 margin: 0 auto;
 position: relative;
 top: -0.6em;
-width: 90%;
+width: 88%;
 opacity: 0.3;
 
 }
 
 
 .movies .center .movies-container  {
-  padding: 2em 5.5em;
+  padding: 1.3em 7em;
   display: grid;
   grid-template-columns:repeat(4,1fr);
   grid-gap: 2.3em;
@@ -236,15 +236,34 @@ opacity: 0.3;
 .movies .center .movies-container .movie-item {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-
+  }
 
 .movies .center .movies-container .movie-item img {
   border: 5px solid #fff;
-  max-width: 100%;
+  border-radius: 5px;
+  max-width: 89.5%;
   height: auto;
+
 }
+
+.movies .center .movies-container .movie-item p {
+  margin: 0px 0;
+  margin-top: -4px;
+}
+
+.movies .center .movies-container .movie-item p {
+  color: var(--clr-white);
+  font-weight: bold;
+}
+
+.movies .center .movies-container .movie-item span {
+  color: #919191 !important;
+  font-size: 0.85em;
+  position: relative;
+  top: -3px;
+}
+
+
 
 
 
@@ -360,7 +379,7 @@ opacity: 0.3;
 
 .movies .center .movies-container  {
     padding: 2em 1.5em !important;
-    grid-gap: 1.5em;
+    gap: 1.5em;
   }
 
   .movies .center .movies-container .movie-item {
@@ -495,7 +514,7 @@ section .grid #popular, section .grid i{
 
 .movies .center .movies-container  {
     padding: 2em 1em !important;
-    grid-gap: 1.2em;
+    gap: 1.2em;
   }
 
   .movies .center .movies-container .movie-item {
@@ -522,9 +541,12 @@ section .grid #popular, section .grid i{
   nav .nav-items .logo {
     margin-right: auto;
     padding-top: 0.3em;
-
   }
 
+  nav .nav-items .logo img{
+    width: 89.11px;
+    height: 28px;
+  }
 
   nav .nav-items .nav-list .nav-list-icons {
     font-size: 1.3em;
@@ -539,22 +561,17 @@ section .grid #popular, section .grid i{
 
 
 .movies .center .movies-container  {
-    padding: 2em 1.5em !important;
+    padding: 2em 0.6em !important;
     grid-template-columns:repeat(2,1fr);
-    gap: 1.5em;
+    gap: 1em;
   }
 
   .movies .center .movies-container .movie-item {
-
-    margin-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 7px;
+    margin-right: 0px;
   }
 
 
-}
-
-
-@media (max-width:740px) {
-.movies .center .movies-container  {
-  gap: 1.8em;
-  }
 }
