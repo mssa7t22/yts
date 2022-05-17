@@ -342,7 +342,7 @@ opacity: 0.3;
 
 @media (max-width:1100px) {
 
-.movies .movies-container  {
+.movies .center .movies-container  {
   padding: 2em 4.5em !important;
 }
 }
@@ -352,12 +352,12 @@ opacity: 0.3;
 
   nav .nav-items .nav-search {display: none;}
 
-  .movies .movies-container  {
+.movies .center .movies-container  {
     padding: 2em 1.5em !important;
     grid-gap: 1.5em;
   }
 
-  .movies-container .movie-item {
+  .movies .center .movies-container .movie-item {
     margin-right: 10px;
   }
 
@@ -467,11 +467,11 @@ section .grid #popular, section .grid i{
 }
 
 
-  .movies .movies-container  {
+.movies .center .movies-container  {
     padding: 2em 1.3em !important;
   }
 
-  .movies-container .movie-item {
+.movies .center .movies-container .movie-item {
     padding-left: 5px;
     padding-right: 5px;
     margin-right: 10px;
@@ -488,12 +488,12 @@ section .grid #popular, section .grid i{
     font-size: 1em;
   }
 
-  .movies .movies-container  {
+.movies .center .movies-container  {
     padding: 2em 1em !important;
     grid-gap: 1.2em;
   }
 
-  .movies-container .movie-item {
+  .movies .center .movies-container .movie-item {
     padding-left: 5px;
     padding-right: 5px;
     margin-right: 10px;
@@ -530,13 +530,13 @@ section .grid #popular, section .grid i{
 
 
 
-  .movies .movies-container  {
+.movies .center .movies-container  {
     padding: 2em 1.5em !important;
     grid-template-columns:repeat(2,1fr);
     gap: 1.5em;
   }
 
-  .movies-container .movie-item {
+  .movies .center .movies-container .movie-item {
 
     margin-right: 10px;
   }
@@ -546,7 +546,7 @@ section .grid #popular, section .grid i{
 
 
 @media (max-width:740px) {
-  .movies .movies-container  {
+.movies .center .movies-container  {
   gap: 1.8em;
   }
 }
