@@ -373,6 +373,7 @@ opacity: 0.3;
 
   nav .nav-items .nav-list ul {
 margin: 0;
+padding: 0;
   }
 
 nav .nav-items .nav-text {
@@ -406,15 +407,13 @@ nav .nav-items .nav-list .nav-list-icons a:hover {
 
 
 nav .nav-items .nav-list .nav-list-icons {
-  font-size: 1.6em;
+  font-size: 1.5em;
   margin-top: 0px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-right: 0px !important;
 }
 
 nav .nav-items .nav-list #first-icon {
-  padding-left: 0;
-  padding-right: 0;
+  padding-right: 0px;
 }
 
 nav .nav-items .nav-list #first-icon:hover, nav .nav-items .nav-list #last-icon:hover {
@@ -423,7 +422,7 @@ nav .nav-items .nav-list #first-icon:hover, nav .nav-items .nav-list #last-icon:
 
 
 nav .nav-items .nav-list #last-icon {
-  padding-left: 0.7em;
+  padding-left: 19px;
   padding-right: 0;
 }
 
