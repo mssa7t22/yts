@@ -246,17 +246,17 @@ opacity: 0.3;
 
 }
 
-.movies .center .movies-container .movie-item p {
+.movies-container .movie-item p {
   margin: 0px 0;
   margin-top: -4px;
 }
 
-.movies .center .movies-container .movie-item p {
+.movies-container .movie-item p {
   color: var(--clr-white);
   font-weight: bold;
 }
 
-.movies .center .movies-container .movie-item span {
+.movies-container .movie-item span {
   color: #919191 !important;
   font-size: 0.85em;
   position: relative;
