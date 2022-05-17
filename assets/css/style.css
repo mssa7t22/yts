@@ -220,21 +220,21 @@ opacity: 0.3;
 }
 
 
-.movies-container  {
+.movies .center .movies-container  {
   padding: 2em 5.5em;
   display: grid;
   grid-template-columns:repeat(4,1fr);
   grid-gap: 2.3em;
 }
 
-.movies-container .movie-item {
+.movies .center .movies-container .movie-item {
   padding-left: 15px;
   padding-right: 15px;
 }
 
 
 
-.movies-container .movie-item img {
+.movies .center .movies-container .movie-item img {
   border: 5px solid #fff;
   max-width: 100%;
   height: auto;
