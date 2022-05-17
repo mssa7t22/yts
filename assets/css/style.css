@@ -116,7 +116,7 @@ nav .nav-items .nav-list .nav-list-links a:hover {
 }
 
 
-nav .nav-items .nav-list .nav-list-icons {
+nav .nav-items .nav-list .mobile {
   display: none;
 }
 
@@ -397,8 +397,8 @@ opacity: 0.3;
   }
 
   nav .nav-items .nav-list ul {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
   }
 
 nav .nav-items .nav-text {
@@ -412,65 +412,52 @@ nav .nav-items .nav-text {
 }
 
 nav .nav-items .logo {
-
   margin-right: 10px;
 }
 
 
-nav .nav-items .nav-list .nav-list-links a {
+nav .nav-items .nav-list .desktop {
   display: none;
 }
 
-nav .nav-items .nav-list .nav-list-icons, nav .nav-items .nav-list .nav-list-icons a {
-  display: inline-block;
+
+nav .nav-items .nav-list .mobile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   color: #e3e3e3;
 }
 
-nav .nav-items .nav-list .nav-list-icons a:hover {
+nav .nav-items .nav-list .mobile .nav-list-icons a:hover {
   color: var(--clr-secondary);
 }
 
 
-nav .nav-items .nav-list .nav-list-icons {
+nav .nav-items .nav-list .mobile .nav-list-icons {
   font-size: 1.5em;
   margin-top: 0px;
-  padding-right: 0px !important;
+  padding-left: 20px !important;
 }
 
-nav .nav-items .nav-list #first-icon {
-  padding-right: 0px;
-}
+
 
 nav .nav-items .nav-list #first-icon:hover, nav .nav-items .nav-list #last-icon:hover {
   color: var(--clr-secondary);
 }
 
 
-nav .nav-items .nav-list #last-icon {
-  padding-left: 19px;
-  padding-right: 0;
-}
-
-
-nav .nav-items .nav-list .nav-list-icons #big-4k {
+nav .nav-items .nav-list .mobile .nav-list-icons #big-4k {
   color: var(--clr-primary);
   font-weight: bold;
 }
 
-nav .nav-items .nav-list .nav-list-icons #big-4k:hover {
+nav .nav-items .nav-list .mobile .nav-list-icons #big-4k:hover {
   color: #529834;
 
 }
 
 
-nav .nav-items .nav-list .login  {
-  border-right: none;
-  display: none;
-}
 
-nav .nav-items .nav-list .register  {
-  display: none;
-}
 
 
 /* ---x---- Navbar -----x----- */
@@ -536,10 +523,9 @@ section .grid #popular, section .grid i{
 
   }
 
-  nav .nav-items .nav-list ul {
-    padding-left: 0;
-    margin-left: 0;
-    padding-right: 0;
+  nav .nav-items .nav-list .mobile {
+    padding-left: 0.1em;
+
   }
 
   nav .nav-items .nav-text {
@@ -556,17 +542,13 @@ section .grid #popular, section .grid i{
     height: 28px;
   }
 
-  nav .nav-items .nav-list .nav-list-icons {
-    font-size: 1.3em;
-    margin: 0.3em;
-    padding-right: 0.2em;
-    padding-left: 0;
+  nav .nav-items .nav-list .mobile .nav-list-icons {
+    font-size: 1.28em;
+    margin-top: 0px;
+    padding-left: 12px !important;
   }
 
-  hr{
-  width: 100%;}
-
-
+  hr{width: 100%;}
 
 .movies .center .movies-container  {
     padding: 2em 0.6em !important;
