@@ -19,7 +19,6 @@ body {
   margin: 0;
   padding: 0px;
   font-size:16px;
-  line-height:1.42857143;
   background-color: var(--background-color);
   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
   scroll-behavior: smooth;
@@ -214,6 +213,7 @@ background-color: var(--clr-dark);
 .movies .center {
 display: flex;
 justify-content: center;
+align-items: center;
 }
 
 
@@ -229,25 +229,35 @@ opacity: 0.3;
 
 
 .movies .center .movies-container  {
-  padding: 1.3em 7em;
+  padding: 1.3em 5em;
   display: grid;
   grid-template-columns:repeat(4,1fr);
-  grid-gap: 2.3em;
+  gap: 2em;
   position: relative;
+  z-index: 0;
 }
 
-.movies .center .movies-container .movie-item {
-  padding-left: 10px;
-  padding-right: 10px;
+
+
+
+  .movies .center .movies-container .movie-item {
+
   }
 
-.movies .center .movies-container .movie-item img {
+.movies .center .movies-container .movie-item .movie-image img {
   border: 5px solid #fff;
   border-radius: 5px;
-  max-width: 89.5%;
+  max-width: 90%;
   height: auto;
-
 }
+
+
+.movies .center .movies-container .movie-item .movie-image img:hover {
+-webkit-filter: brightness(30%);
+  border: 5px solid #6AC045 !important;
+}
+
+
 
 .movies-container .movie-item p {
   margin: 0px 0;
@@ -258,12 +268,13 @@ opacity: 0.3;
   color: var(--clr-white);
   display: block;
   font-weight: bold;
+  margin: 0;
   font-size: 0.9em;
   -webkit-transition: color .15s ease-in-out;
   overflow: hidden;
   text-overflow: ellipsis;
   position: relative;
-  top: -3px;
+  top: -2px;
   left:2px;
 }
 
@@ -275,7 +286,8 @@ opacity: 0.3;
   color: #919191 !important;
   font-size: 0.85em;
   position: relative;
-  top: -1px;
+  top: 2px;
+  left:2px;
 }
 
 
@@ -458,7 +470,8 @@ text-align: center;
   }
 
   .movies .center .movies-container .movie-item {
-
+    margin: 0;
+    padding: 0;
   }
 
   .movies #latest-text  {
@@ -561,10 +574,6 @@ section .grid #popular, section .grid i{
     padding: 2em 1.3em !important;
   }
 
-.movies .center .movies-container .movie-item {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
 
   .movies #latest-text  {
     padding-left: 1.3em;}
@@ -585,9 +594,6 @@ section .grid #popular, section .grid i{
     gap: 1.2em;
   }
 
-  .movies .center .movies-container .movie-item {
-    margin-right: 10px;
-  }
 
   .movies #latest-text  {
     padding-left: 1em;}
@@ -634,20 +640,14 @@ section .grid #popular, section .grid i{
 .movies .center .movies-container  {
     padding: 2em 0.6em !important;
     grid-template-columns:repeat(2,1fr);
-    column-gap: 6em;
+    column-gap: 4.5em;
     row-gap: 1.5em;
     margin: 0;
   }
 
-  .movies .center .movies-container .movie-item {
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 7px;
-    margin-right: 0px;
-  }
 
   .movies #latest-text  {
-    padding-left: 1em;}
+    padding-left: 0.8em;}
 
 }
 
