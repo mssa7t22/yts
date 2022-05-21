@@ -80,10 +80,10 @@ section .grid .center i
 
 
 .movies .center .movies-container  {
-  padding: 1.3em 5em;
+  padding: 1.3em 3em;
   display: grid;
   grid-template-columns:repeat(4,1fr);
-  gap: 2em;
+  gap: 3em;
   position: relative;
 }
 
@@ -342,7 +342,6 @@ section .grid p {
       font-size: 0.9em;
       font-weight: bold;
       padding-top: 1em;
-      color: var(--clr-white);
   }
 
 section .grid a {
@@ -362,9 +361,7 @@ section .grid .center {
 {
 
   section .grid h1 {
-      color: var(--clr-white);
       font-size: 1em;
-      text-align: center;
   }
 
 .movies .center .movies-container  {
