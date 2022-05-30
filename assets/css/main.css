@@ -16,10 +16,6 @@
   --clr-primary: #6AC045;
   --clr-primary-hover: #529834;
   --clr-secondary: #919191;
-
-  --select-border: #ff0000;
-  --select-focus: blue;
-  --select-arrow: var(--select-border);
 }
 
 body {
