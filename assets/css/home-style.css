@@ -370,5 +370,10 @@ section .grid .center {
       font-size: 1em;
   }
 
+  .movies .center .movies-container  {
+        grid-template-columns:1fr;
+        row-gap: 2em;}
+  }
+
 
 }
