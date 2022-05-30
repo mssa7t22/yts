@@ -182,12 +182,12 @@ nav .nav-items .nav-list .login a:hover, nav .nav-items .nav-list .register a:ho
   padding: 2em 3em;
   display: grid !important;
   grid-template-columns:repeat(3,1fr);
-  grid-column-gap: 10em;
+  grid-column-gap: 8em;
   grid-row-gap: 2.4em;
 }
 
 .browsing-icons .browsing-icons-container .browsing-icons-item {
-  color: var(--clr-white);
+  color: #E3E3E3;
   font-size: 1.6em;
   text-align: center;
 }
@@ -394,16 +394,6 @@ nav .nav-items .nav-text {
 
 }
 
-@media only screen and (max-width:695px)
-{
-
-  .browsing-icons .browsing-icons-container {
-
-    grid-column-gap: 8em;
-    grid-row-gap: 2.3em;
-  }
-
-}
 
 
 @media only screen and (max-width:360px)
