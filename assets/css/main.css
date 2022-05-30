@@ -44,6 +44,8 @@ body {
 
 ::-webkit-scrollbar-track {background: var(--clr-dark) !important;}
 
+-webkit-tap-highlight-color: transparent;
+
 
 /** ------------ NAV Section ---------------- **/
 nav {
