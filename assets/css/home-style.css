@@ -168,7 +168,7 @@ section .grid .center i
   }
 
 .movies .center .movies-container .movie-item .movie-image .hover-box .green-btn:hover {
-  background-color: var(--clr-primary);
+  background-color: var(--clr-primary-hover);
   }
 
 
@@ -353,6 +353,16 @@ section .grid .center {
 }
 
 
+@media only screen and (max-width:500px) {
+
+.movies .center .movies-container {
+        column-gap: 2.2em;
+        row-gap: 1.8em;
+  }
+
+}
+
+
 @media only screen and (max-width:360px)
 {
 
@@ -360,8 +370,5 @@ section .grid .center {
       font-size: 1em;
   }
 
-.movies .center .movies-container  {
-      grid-template-columns:1fr;
-      row-gap: 2em;}
 
 }

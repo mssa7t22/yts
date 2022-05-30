@@ -105,7 +105,7 @@
   }
 
 .movies .center .movies-container .movie-item .movie-image .hover-box .green-btn:hover {
-  background-color: var(--clr-primary);
+  background-color: var(--clr-primary-hover);
   }
 
 .movies-container .movie-item p {
@@ -305,6 +305,11 @@
 .search-area .col select {
     width: 5.5em;
   }
+
+.movies .center .movies-container  {
+      column-gap: 2.2em;
+      row-gap: 1.8em;
+      }
 
 }
 

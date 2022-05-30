@@ -78,7 +78,7 @@ margin-top: 1.3em;
 }
 
 .search-area .col p {
-  padding-bottom: 0.6em;
+  padding-bottom: 0.5em;
   font-size: 0.9em;
   font-weight: bold;
 }
@@ -87,12 +87,15 @@ margin-top: 1.3em;
   background-color: #282828;
   color: #a2a2a2;
   height: 40px;
-  outline: none;
   padding: 0.3em 0.5em;
   width: 9em;
   border-radius: 3px;
-  border: none;
 }
+
+.search-area .col select:focus {
+  color: var(--clr-primary-hover);
+}
+
 
 .movies h3 {
   text-align: center;
@@ -257,7 +260,7 @@ margin-top: 1.3em;
   }
 
 .movies .center .movies-container .movie-item .movie-image .hover-box .green-btn:hover {
-  background-color: var(--clr-primary);
+  background-color: var(--clr-primary-hover);
   }
 
 .movies-container .movie-item p {
@@ -458,6 +461,11 @@ margin-top: 1.3em;
     width: 5.5em;
   }
 
+
+.movies .center .movies-container {
+          column-gap: 2.2em;
+          row-gap: 1.8em;
+    }
 }
 
 
