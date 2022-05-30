@@ -30,6 +30,7 @@ body {
   background-color: var(--background-color);
   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 
