@@ -35,7 +35,6 @@ body {
 
 ::-webkit-scrollbar {
   width:5px !important;
-  overflow: scroll;
 }
 
 ::-webkit-scrollbar-thumb {
