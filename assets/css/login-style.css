@@ -95,7 +95,7 @@ section.dark-bg-image {
 }
 
 .dark-bg-image .additional-functions .links a {
-  color: var(--clr-primary);
+  color: var(--clr-white);
   display: block;
   padding-bottom: 0.6em;
   font-size: 0.95em;
