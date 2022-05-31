@@ -129,7 +129,7 @@ section.dark-bg-image {
   }
 
 .dark-bg-image  .login-box .username-box input, .dark-bg-image  .login-box .password-box input {
-    width: 20em;
+    width: 22em;
   }
 
 
@@ -139,7 +139,7 @@ section.dark-bg-image {
 @media only screen and (max-width:360px)
 {
   .dark-bg-image  .login-box .username-box input, .dark-bg-image  .login-box .password-box input {
-      width: 14em;
+      width: 16em;
     }
 
   }
