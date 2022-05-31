@@ -1,0 +1,147 @@
+
+
+
+section.dark-bg-image {
+  margin: 0;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+
+
+.dark-bg1 {background-color: var(--clr-dark);}
+
+.dark-bg2 {background-color: var(--clr-dark-light);}
+
+.dark-bg-image  {
+
+
+}
+
+
+.dark-bg-image .login-box {
+  display: flex;
+  justify-content: center !important;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 6em;
+}
+
+.dark-bg-image #login-text  {
+  margin-top: 0.5em;
+  padding-bottom: 60px;
+  color: var(--clr-primary);
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.dark-bg-image  .login-box .login-box-text {
+  padding-bottom: 0.5em;
+  color: #969696;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+.dark-bg-image  .login-box .username-box, .dark-bg-image  .login-box .password-box {
+
+}
+
+.dark-bg-image  .login-box .username-box input, .dark-bg-image  .login-box .password-box input {
+  margin-top: 0.1em;
+  margin-bottom: 1.3em;
+  color: #969696;
+  background-color: #282828;
+  font-weight: normal;
+  font-size: 0.95em;
+  width: 30em;
+  padding: 0.7em 0.5em;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+
+.dark-bg-image .additional-functions {
+  display: block;
+  padding:0;
+  margin: 0;
+}
+
+.dark-bg-image .additional-functions > a {
+  display: block;
+  padding: 0.6em 0.9em;
+  margin-top: 0.3em;
+  color: var(--clr-white);
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  word-wrap: normal;
+  background-color: var(--clr-primary);
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms ease;
+  transition-delay: 100ms;
+}
+
+.dark-bg-image .additional-functions > a:hover {
+  background-color: var(--clr-primary-hover);
+
+}
+
+.dark-bg-image .additional-functions .links a {
+  color: var(--clr-primary);
+  display: block;
+  padding-bottom: 0.6em;
+  font-size: 0.95em;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms ease;
+  transition-delay: 100ms;
+}
+
+
+
+.dark-bg-image .additional-functions .links a:first-child {
+  margin-top: 1.2em;
+}
+
+
+.additional-functions .links a:hover {
+  color: var(--clr-primary-hover);
+  }
+
+
+
+
+
+@media only screen and (max-width:500px) {
+
+.dark-bg-image .login-box {
+    padding: 2em 2em;
+  }
+
+.dark-bg-image  .login-box .username-box input, .dark-bg-image  .login-box .password-box input {
+    width: 20em;
+  }
+
+
+}
+
+
+@media only screen and (max-width:360px)
+{
+  .dark-bg-image  .login-box .username-box input, .dark-bg-image  .login-box .password-box input {
+      width: 14em;
+    }
+
+  }
+
+}
