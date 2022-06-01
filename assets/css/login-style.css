@@ -3,12 +3,13 @@
 
 section.dark-bg-image {
   margin: 0;
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/Soft-Blue-Wallpaper.PNG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   padding-bottom: 2em;
+  background-color: var(--clr-dark-light);
 }
 
 
@@ -45,6 +46,8 @@ section.dark-bg-image {
   color: #969696;
   font-weight: bold;
   font-size: 0.95em;
+  position: relative;
+  top: 0.7em;
 
 }
 
