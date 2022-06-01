@@ -1,0 +1,183 @@
+
+
+
+section.bg{
+  margin: 0;
+  background-color: var(--clr-dark-light);
+  background-image: url("../images/Soft-Blue-Wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+
+
+
+
+.center {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.center .register-box {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 1.5em;
+  padding: 2em;
+}
+
+.center #register-text  {
+
+  text-align: left;
+  margin-top: 0;
+  padding-top: 40px;
+  color: var(--clr-primary);
+  font-size: 2em;
+  font-weight: 500;
+}
+
+
+.center .register-box .register-box-text {
+  padding-bottom: 0;
+  padding: 0;
+  color: #969696;
+  font-weight: bold;
+  font-size: 0.95em;
+  position: relative;
+  top: 0.7em;
+}
+
+.center  .register-box .username-box input,
+.center  .register-box .email-box input,
+.center  .register-box .password-box input
+ {
+  color: #969696;
+  background-color: #282828;
+  font-weight: normal;
+  font-size: 0.95em;
+  min-width: 26em;
+  max-width: 100%;
+  padding: 0.7em 2em;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+
+.register-box .username-box i ,
+.register-box .email-box i,
+.register-box .password-box i {
+  display:flex;
+  justify-content: space-between;
+  position:relative;
+  top: 1.7em;
+  left: 0.5em;
+  color: #E3E3E3;
+  width: 24px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.center .empty {
+  width: 100%;
+  visibility: hidden;
+}
+
+.center .additional-function {
+  width: 100%;
+  padding:0;
+  margin: 0;
+}
+
+.center .additional-function a {
+  width: 60px;
+  float: right;
+  margin-left: auto;
+  padding: 0.6em 0.9em;
+  margin-top: 0.3em;
+  color: var(--clr-white);
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  word-wrap: normal;
+  background-color: var(--clr-primary);
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms ease;
+  transition-delay: 100ms;
+}
+
+.center .additional-functions > a:hover {
+  background-color: var(--clr-primary-hover);
+
+}
+
+@media only screen and (max-width:991px) {
+  .center .register-box {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 1em;
+  }
+
+  .center  .register-box .username-box input,
+  .center  .register-box .email-box input,
+  .center  .register-box .password-box input
+   {
+
+    min-width: 40em;
+    max-width: auto;
+  }
+
+
+}
+
+
+@media only screen and (max-width:700px) {
+  .center  .register-box .username-box input,
+  .center  .register-box .email-box input,
+  .center  .register-box .password-box input
+   {
+    min-width: 32em;
+  }
+}
+
+
+@media only screen and (max-width:580px) {
+  .center  .register-box .username-box input,
+  .center  .register-box .email-box input,
+  .center  .register-box .password-box input
+   {
+    min-width: 27em;
+  }
+}
+
+
+@media only screen and (max-width:500px) {
+
+  .center  .register-box .username-box input,
+  .center  .register-box .email-box input,
+  .center  .register-box .password-box input
+   {
+    min-width: 20em;
+  }
+}
+
+@media only screen and (max-width:400px) {
+
+  .center #register-text  {
+    font-size: 1.5em;
+  }
+
+  .center  .register-box .username-box input,
+  .center  .register-box .email-box input,
+  .center  .register-box .password-box input
+   {
+    min-width: auto;
+  }
+}

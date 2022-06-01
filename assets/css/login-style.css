@@ -18,11 +18,6 @@ section.dark-bg-image {
 
 .dark-bg2 {background-color: var(--clr-dark-light);}
 
-.dark-bg-image  {
-
-
-}
-
 
 .dark-bg-image .login-box {
   display: flex;
