@@ -27,6 +27,7 @@ align-items: center;
   grid-template-columns: repeat(2,1fr);
   grid-gap: 1.5em;
   padding: 2em;
+  block-size: fit-content;
 }
 
 .center #register-text  {
@@ -58,9 +59,8 @@ align-items: center;
   background-color: #282828;
   font-weight: normal;
   font-size: 0.95em;
-  width:27em;
+  width:fit-content;
   min-width: 26em;
-  max-width: 100%;
   padding: 0.7em 2em;
   border-radius: 3px;
   outline: none;
@@ -165,7 +165,7 @@ align-items: center;
   .center  .register-box .email-box input,
   .center  .register-box .password-box input
    {
-    width: 20em;
+    width: fit-content;
   }
 }
 
@@ -179,6 +179,6 @@ align-items: center;
   .center  .register-box .email-box input,
   .center  .register-box .password-box input
    {
-    width: 10em;
+    min-width: 10em;
   }
 }
