@@ -31,6 +31,9 @@ body {
   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+animation: fadeInAnimation ease 3s;
+animation-iteration-count: 1;;
+animation-fill-mode: forwards;
 }
 
 
@@ -142,6 +145,10 @@ nav .nav-items .nav-list .nav-list-links .small-4k:hover{
 
 nav .nav-items .nav-list .nav-list-links .active {
   color: var(--clr-white);
+}
+
+nav .nav-items .nav-list .nav-list-links .active-sp {
+  color: var(--clr-primary);
 }
 
 nav .nav-items .nav-list .nav-list-links a:hover {

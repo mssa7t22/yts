@@ -9,7 +9,7 @@ section.bg{
   background-size: cover;
   background-position: center;
   width: 100%;
-  padding-bottom: 2em;
+  min-height: 29.5em;
 }
 
 
@@ -33,7 +33,7 @@ align-items: center;
 
   text-align: left;
   margin-top: 0;
-  padding-top: 40px;
+  padding-top: 20px;
   color: var(--clr-primary);
   font-size: 2em;
   font-weight: 500;
@@ -58,6 +58,7 @@ align-items: center;
   background-color: #282828;
   font-weight: normal;
   font-size: 0.95em;
+  width:27em;
   min-width: 26em;
   max-width: 100%;
   padding: 0.7em 2em;
@@ -110,10 +111,10 @@ align-items: center;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   transition: all 300ms ease;
-  transition-delay: 100ms;
+  transition-delay: 70ms;
 }
 
-.center .additional-functions > a:hover {
+.center .additional-function a:hover {
   background-color: var(--clr-primary-hover);
 
 }
@@ -164,7 +165,7 @@ align-items: center;
   .center  .register-box .email-box input,
   .center  .register-box .password-box input
    {
-    min-width: 20em;
+    width: 20em;
   }
 }
 
