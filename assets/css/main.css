@@ -429,27 +429,9 @@ nav .nav-items .nav-text {
   .footer-nav ul {display: none;}
 
   nav .nav-items .nav-list .mobile .nav-list-icons {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-top: 0px;
     padding-left: 1em !important;
-  }
-
-  nav {
-    display: flex;
-    justify-content:center !important;
-    align-items: center !important;
-
-  }
-
-  nav .nav-items,
-  nav .nav-items .nav-list,
-  nav .nav-items .nav-list  .mobile .nav-list-icons,
-  nav .nav-items .nav-list .nav-list-icons #big-4k
-
-   {padding: 0; margin: 0;}
-
-  nav .nav-items .logo {
-    display: none;
   }
 
 
