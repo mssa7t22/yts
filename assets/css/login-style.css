@@ -63,7 +63,7 @@ section.dark-bg-image {
   font-weight: normal;
   font-size: 0.95em;
   width: 30em;
-  padding: 0.7em 1.8em;
+  padding: 0.7em 2em;
   border-radius: 3px;
   outline: none;
   border: none;
@@ -116,7 +116,7 @@ section.dark-bg-image {
 .dark-bg-image .additional-functions .links a {
   color: var(--clr-white);
   display: block;
-  padding-bottom: 0.6em;
+  padding-bottom: 0.7em;
   font-size: 0.95em;
   font-weight: 500;
   cursor: pointer;
