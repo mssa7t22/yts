@@ -179,6 +179,6 @@ align-items: center;
   .center  .register-box .email-box input,
   .center  .register-box .password-box input
    {
-    min-width: auto;
+    width: 10em;
   }
 }
