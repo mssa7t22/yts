@@ -40,6 +40,10 @@
   -webkit-appearance: none;
 }
 
+.search-area .row1 input::placeholder {
+  font-size: 1.2em;
+}
+
 input::-webkit-search-cancel-button,
 input::-webkit-search-decoration {
   display: none;

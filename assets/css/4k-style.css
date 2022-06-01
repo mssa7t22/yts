@@ -44,6 +44,10 @@ nav .nav-items .nav-list .nav-list-links #small-4k{
   -webkit-appearance: none;
 }
 
+.search-area .row1 input::placeholder {
+  font-size: 1.2em;
+}
+
 input::-webkit-search-cancel-button,
 input::-webkit-search-decoration {
   display: none;
@@ -89,13 +93,9 @@ margin-top: 1.3em;
   height: 40px;
   padding: 0.3em 0.5em;
   width: 9em;
+  border-color: transparent;
   border-radius: 3px;
 }
-
-.search-area .col select:focus {
-  color: var(--clr-primary-hover);
-}
-
 
 .movies h3 {
   text-align: center;
