@@ -11,10 +11,7 @@ section.bg{
 
 
 .center {
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 2em 4em;
+
 }
 
 .center .register-box {
