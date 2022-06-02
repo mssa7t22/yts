@@ -17,14 +17,13 @@ section.bg{
 display: flex;
 justify-content: center;
 align-items: center;
+padding: 2em 4em;
 }
 
 .center .register-box {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-gap: 1.5em;
-  padding: 2em;
-  block-size: fit-content;
 }
 
 .center #register-text  {
