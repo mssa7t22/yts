@@ -13,9 +13,6 @@ section.bg{
 }
 
 
-
-
-
 .center {
 display: flex;
 justify-content: center;
@@ -185,11 +182,15 @@ align-items: center;
 
 @media only screen and (max-width:360px) {
 
+  .center .register-box {
+    padding: 2em 1em;
+  }
+
   .center  .register-box .username-box input,
   .center  .register-box .email-box input,
   .center  .register-box .password-box input
    {
-    width: 14em;
+    width: 16em;
   }
 }
 
@@ -199,6 +200,7 @@ align-items: center;
     font-size: 1em;
     font-weight: bold;
   }
+
   .center  .register-box .username-box input,
   .center  .register-box .email-box input,
   .center  .register-box .password-box input
