@@ -1,3 +1,6 @@
+
+
+
 section.bg{
   margin: 0;
   background-color: var(--clr-dark-light);
@@ -73,6 +76,13 @@ align-items: center;
   height: auto;
   margin: 0;
   padding: 0;
+}
+
+ .username-box:hover > i, .username-box:active > i, .username-box:focus > i,
+ .email-box:hover > i, .email-box:active > i, .email-box:focus > i,
+ .password-box:hover > i, .password-box:active > i, .password-box:focus > i
+ {
+color: var(--clr-primary) !important;
 }
 
 .center .empty {
@@ -158,7 +168,7 @@ align-items: center;
   .center  .register-box .email-box input,
   .center  .register-box .password-box input
    {
-    width: 24em;
+    width: 22em;
   }
 }
 
