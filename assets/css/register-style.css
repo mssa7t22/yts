@@ -80,9 +80,9 @@ padding: 2em 4em;
   transition: all 300ms ease;
 }
 
- .username-box:hover > i, .username-box:active > i, .username-box:focus > i,
- .email-box:hover > i, .email-box:active > i, .email-box:focus > i,
- .password-box:hover > i, .password-box:active > i, .password-box:focus > i
+.username-box:active > i, .username-box:focus > i,
+.email-box:active > i, .email-box:focus > i,
+.password-box:active > i, .password-box:focus > i
  {
 color: var(--clr-primary) !important;
 }
