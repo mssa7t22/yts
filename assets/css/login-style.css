@@ -77,6 +77,11 @@ section.dark-bg-image {
   padding: 0;
 }
 
+.username-box:hover > i, .username-box:active > i, .username-box:focus > i,
+.password-box:hover > i, .password-box:active > i, .password-box:focus > i
+ {
+color: var(--clr-primary) !important;
+}
 
 .dark-bg-image .additional-functions {
   display: block;
