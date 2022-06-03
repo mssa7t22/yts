@@ -9,13 +9,6 @@ section.dark-bg-image {
   padding-bottom: 2em;
 }
 
-
-
-.dark-bg1 {background-color: var(--clr-dark);}
-
-.dark-bg2 {background-color: var(--clr-dark-light);}
-
-
 .dark-bg-image .login-box {
   display: flex;
   justify-content: center !important;
