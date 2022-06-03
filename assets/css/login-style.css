@@ -41,9 +41,6 @@ section.dark-bg-image {
 
 }
 
-.dark-bg-image  .login-box .username-box, .dark-bg-image  .login-box .password-box {
-
-}
 
 .dark-bg-image  .login-box .username-box input, .dark-bg-image  .login-box .password-box input {
   margin-top: 0em;
@@ -136,6 +133,23 @@ color: var(--clr-primary) !important;
   color: var(--clr-primary);
   }
 
+
+  @media only screen and (max-width:991px) {
+
+    .dark-bg-image .login-box {
+      display: flex;
+      justify-content: center !important;
+      flex-direction: column;
+      padding: 2em 3em;
+      width: auto;
+    }
+
+
+  .dark-bg-image  .login-box .username-box input, .dark-bg-image  .login-box .password-box input {
+      width: auto;
+    }
+
+  }
 
 
 @media only screen and (max-width:670px) {
