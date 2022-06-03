@@ -9,7 +9,6 @@ section.bg{
   min-height: 29.5em;
 }
 
-
 .center {
 display: flex;
 justify-content: center;
@@ -24,7 +23,6 @@ padding: 2em 4em;
 }
 
 .center #register-text  {
-
   text-align: left;
   margin-top: 0;
   padding-top: 20px;
@@ -156,12 +154,29 @@ color: var(--clr-primary) !important;
   .center  .register-box .email-box input,
   .center  .register-box .password-box input
    {
-    width: 27em;
+    width: 28em;
   }
 }
 
 
 @media only screen and (max-width:500px) {
+
+  .center .register-box {
+    padding: 2em 1em;
+  }
+  .center  .register-box .username-box input,
+  .center  .register-box .email-box input,
+  .center  .register-box .password-box input
+   {
+    width: 26em;
+  }
+}
+
+@media only screen and (max-width:460px) {
+
+  .center #register-text  {
+    font-size: 1.5em;
+  }
 
   .center  .register-box .username-box input,
   .center  .register-box .email-box input,
@@ -171,10 +186,10 @@ color: var(--clr-primary) !important;
   }
 }
 
-@media only screen and (max-width:450px) {
 
+@media only screen and (max-width:400px) {
   .center #register-text  {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .center  .register-box .username-box input,
@@ -185,32 +200,35 @@ color: var(--clr-primary) !important;
   }
 }
 
-
-@media only screen and (max-width:360px) {
-
-  .center .register-box {
-    padding: 2em 1em;
-  }
+@media only screen and (max-width:345px) {
 
   .center  .register-box .username-box input,
   .center  .register-box .email-box input,
   .center  .register-box .password-box input
    {
-    width: 16em;
+    width: 15em;
   }
 }
 
-@media only screen and (max-width:290px) {
-
-  .center #register-text  {
-    font-size: 1em;
-    font-weight: bold;
-  }
+@media only screen and (max-width:300px) {
 
   .center  .register-box .username-box input,
   .center  .register-box .email-box input,
   .center  .register-box .password-box input
    {
-    width: 10em;
+    width: 12em;
+  }
+}
+
+
+@media only screen and (max-width:260px) {
+  .center #register-text  {
+    font-size: 1em;
+  }
+  .center  .register-box .username-box input,
+  .center  .register-box .email-box input,
+  .center  .register-box .password-box input
+   {
+    width:10em;
   }
 }
