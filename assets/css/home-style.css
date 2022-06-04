@@ -59,10 +59,6 @@ section .grid .center i
   display: inline-block;
 }
 
-.dark-bg1 {background-color: var(--clr-dark);}
-
-.dark-bg2 {background-color: var(--clr-dark-light);}
-
 
 .center {
   display: flex;

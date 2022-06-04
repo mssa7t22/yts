@@ -1,0 +1,406 @@
+section .main {
+  padding-top: 3em;
+  width: 100%;
+  padding-bottom: 3em;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: auto;
+  padding: 0em 6em;
+  background-color: var(--clr-dark);
+  background-image: url("../images/4436215.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:auto;}
+
+.movie-details {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-column-gap: 5em;
+}
+
+.first-column {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.first-column img {
+  margin-bottom: 0.3em;
+  height: auto;
+  width: auto;
+  border: 5px solid var(--clr-white);
+  border-radius: 4px;
+}
+
+.first-column .btn {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  width: auto;
+  padding: 0.4em 0.9em;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  word-wrap: normal;
+  color: var(--clr-white);
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms ease;
+  transition-delay: 100ms;
+  }
+
+.first-column .green-btn {
+  background-color: var(--clr-primary);
+    }
+
+.first-column .blue-btn {
+  background-color: #00b3a1;
+      }
+
+.first-column .green-btn:hover {
+  background-color: var(--clr-primary-hover);
+  }
+
+.first-column .blue-btn:hover {
+  background-color: #00998a;
+    }
+
+.second-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.second-column h1 {
+  color: var(--clr-white);
+  font-size: 2.5em;
+  margin-bottom: 0.55em;
+}
+
+.second-column > p {
+  color: var(--clr-white);
+  line-height: 1.3;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.download-box, .keywords-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.download-box {margin-top: 1.6em;}
+.keywords-box {margin-top: 1em;}
+
+.download-box > p, .keywords-box > p {
+color: var(--clr-white);
+font-size: 1.1em;
+margin-right: 0.6em;
+font-style:oblique;
+}
+
+.download-links, .keywords-links {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 0.4em;
+  margin-bottom: 1.5em;
+}
+
+.keywords-links {
+  grid-template-columns: repeat(5,1fr);
+}
+
+.download-links a, .keywords-links a, .Subtitle-download {
+  color: var(--clr-white);
+  background-color: rgba(27,27,35,.7);
+  font-size: 0.8em;
+  font-weight: normal;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 3px;
+  text-align: center;
+}
+
+
+.download-links a, .keywords-links a {
+  padding: 4px 8px;
+    }
+
+.download-links a:hover, .keywords-links a:hover {
+      color: #d5d5d5;
+    }
+
+.download-links  i {
+  color: var(--clr-primary);
+  padding-right: 0.2em;
+  display: none;
+}
+
+.Subtitle-download {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin-bottom: 1.6em;
+}
+
+
+.Subtitle-download i {
+  margin-right: 0.5em;
+  font-size: 1.4em;
+  color: var(--clr-primary);
+}
+
+.Subtitle-download p:hover {
+      color: #d5d5d5;
+    }
+
+
+.movie-critics {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.8em;
+}
+
+.flex i {
+  font-size: 1.3em;
+  color: var(--clr-primary);
+}
+
+.flex #star {
+  font-size: 1.1em;
+}
+
+.flex i, .flex a{
+  margin-right: 65px;
+  width: 16px;
+  height: auto;
+}
+
+.flex p {
+  text-align: left;
+  color: var(--clr-white);
+  font-weight: bold;
+  margin-right: 0.6em;
+}
+
+
+.third-column p {
+  color: var(--clr-white);
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.similar-movies-box {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 0.8em;
+  width: 100%;
+}
+
+.similar-movies-box img {
+width: 125px;
+height: auto;
+border: 3px solid var(--clr-white);
+border-radius: 3px;
+}
+
+
+
+
+
+@media only screen and (max-width:1320px) {
+
+  .movie-details {
+    grid-column-gap: 3em;
+  }
+
+  .similar-movies-box img {
+  width: 110px;
+  height: auto;
+  }
+
+
+
+}
+
+
+
+@media only screen and (max-width:1225px) {
+
+  .wrapper {
+    padding: 0em 4em;
+  }
+
+  .similar-movies-box img {
+  width: 100px;
+  height: auto;
+  }
+
+
+}
+
+
+@media only screen and (max-width:1115px) {
+
+  .movie-details {
+    grid-column-gap: 1.5em;
+  }
+}
+
+@media only screen and (max-width:1070px) {
+
+  .wrapper {
+    padding: 0em 2em;
+  }
+
+.similar-movies-box img {
+  width: 90px;
+  height: auto;
+  }
+}
+
+
+
+
+@media only screen and (max-width:991px) {
+
+  .wrapper {
+    padding: 0em 4em;
+  }
+
+  .movie-details {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 2em;
+  }
+
+  .download-links  i {
+    display: inline-block;}
+
+  .first-column .btn {
+    padding: 0.4em 0.6em;
+      }
+
+  .third-column {
+    display: none;
+    }
+
+
+
+}
+
+@media only screen and (max-width:880px) {
+
+  .download-links {
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0.3em;
+  }
+
+  .download-box p, .keywords-box p {
+    display: none !important;
+  }
+
+ .keywords-links {
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0.3em;
+  }
+
+
+}
+
+
+@media only screen and (max-width:680px)
+{
+  .wrapper {
+    padding: 0em 2em;
+  }
+
+  .download-links {
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0.6em;
+  }
+
+  .first-column .btn {
+    padding: 0.2em 0.4em;
+      }
+
+  .download-links a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .download-links i {
+margin-top: 0.3em;
+margin-bottom: 0.4em;
+  }
+  .second-column h1 {
+    color: var(--clr-white);
+    font-size: 2em;
+    margin-bottom: 0.55em;
+  }
+
+  .second-column > p {
+    color: var(--clr-white);
+    line-height: 1.3;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+}
+
+@media only screen and (max-width: 565px) {
+  .second-column h1 {
+    font-size: 1.6em;
+  }
+
+  .second-column > p {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+
+}
+
+
+@media only screen and (max-width:550px) {
+
+  .wrapper {
+    padding: 0em 1em;
+  }
+
+  .download-links a {
+   font-size: 0.74em;
+  }
+
+  .flex i, .flex a{
+    margin-right: 40px;
+  }
+
+
+
+}
+
+
+@media only screen and (max-width:360px)
+{
+
+
+
+}
