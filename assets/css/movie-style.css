@@ -391,7 +391,7 @@ border-radius: 3px;
 
 @media only screen and (max-width:880px) {
 
-  .download-links {
+.download-links {
     grid-template-columns: repeat(2,1fr);
     grid-gap: 0.3em;
   }
@@ -541,7 +541,7 @@ section .main {
     width: 88%;
     height: auto;
   }
-.similar-movies-box {
+.third-column-row .similar-movies-box {
 display: none;
 }
 
@@ -637,10 +637,6 @@ margin-bottom: 0.2em;}
     grid-gap: 0.3em;
     padding: 0;
   }
-
-
-
-
 }
 
 
