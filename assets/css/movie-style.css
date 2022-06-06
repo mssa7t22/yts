@@ -223,11 +223,15 @@ font-style:oblique;
 }
 
 
-.third-column p {
+.third-column p, #similar {
   color: var(--clr-white);
   font-size: 1.1em;
   margin-bottom: 0.5em;
 }
+
+#similar {display: none;}
+
+.third-column-row {display: none;}
 
 .similar-movies-box {
   display: grid;
@@ -236,11 +240,16 @@ font-style:oblique;
   width: 100%;
 }
 
-.similar-movies-box img {
+.similar-movie-item img {
 width: 125px;
 height: auto;
 border: 3px solid var(--clr-white);
 border-radius: 3px;
+}
+
+
+.similar-movie-item img:hover {
+border: 3px solid var(--clr-primary);
 }
 
 
@@ -344,6 +353,37 @@ border-radius: 3px;
     }
 
 
+.center-row {
+  margin: 0 auto;
+  padding: 0em 2em;
+}
+
+#similar {display: block;}
+
+.third-column-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.third-column-row p {display: block !important;}
+
+.third-column-row .similar-movies-box img {
+width: 100%;
+height: auto;
+border: 3px solid var(--clr-white);
+border-radius: 3px;
+}
+
+.similar-movies-box {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 0.8em;
+  width: 100%;
+}
+
+
+
 
 }
 
@@ -420,6 +460,13 @@ font-size: 1.3em;
     font-weight: bold;
   }
 
+  .similar-movies-box {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 0.8em;
+      width: 100%;
+    }
+
 }
 
 
@@ -476,8 +523,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: row;
-
   }
+
 
   .download-links i {
 margin-right: 0.4em;
@@ -502,6 +549,9 @@ section .main {
     width: 88%;
     height: auto;
   }
+.similar-movies-box {
+display: none;
+}
 
 
 .movie-details-mobile {display: block;}
@@ -557,9 +607,22 @@ margin-bottom: 0.2em;}
 .Subtitle-download {order: 3;}
 
 .keywords-box {order: 4;}
+
+.similar-movies-box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0.8em;
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 390px) {
+
+.download-box-mobile {
+    display: block !important;
+    margin-top: 0;
+    margin-top: 0.5em;
+  }
 
 .movie-details {
     grid-column-gap: 0.8em;
@@ -574,24 +637,47 @@ margin-bottom: 0.2em;}
   display: none;
 }
 
+.similar-movies-box, #similar {
+    display: none;
+  }
+
+.download-box {display: none !important;}
+.download-box-mobile .download-links {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0.3em;
+  }
+
+  .center-row {
+    padding: 0em 1em;
+  }
+
+
 }
 
 
 @media only screen and (max-width: 360px) {
 
-.first-column {
-    width: 180px;
-    height: auto;
-  }
+  .first-column {
+      width: 180px;
+      height: auto;
+    }
 
   .Subtitle-download {
     flex-direction: row;
     padding: 0.4em 1.5em;
   }
 
+  .keywords-links-mobile {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 0.3em;
+    }
+
 .Subtitle-download span {display: none;}
 .Subtitle-download p {margin-left: 0.3em;}
 }
+
 
 
 @media only screen and (max-width: 340px) {
@@ -601,39 +687,9 @@ margin-bottom: 0.2em;}
     height: auto;
   }
 
-.download-box {display: none !important;}
-
-.download-box-mobile {
-  display: block !important;
-  margin-top: 0;
-  margin-top: 0.5em;
-}
-
-.download-box-mobile .download-links {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap: 0.3em;
-}
-
-
 }
 
 @media only screen and (max-width: 320px) {
-
-.first-column {
-    width: 150px;
-    height: auto;
-  }
-
-.keywords-links-mobile {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 0.3em;
-  }
-
-}
-
-@media only screen and (max-width: 300px) {
   section .main {
     padding-top: 1em;
     padding-bottom: 0em;
@@ -691,11 +747,11 @@ margin-bottom: 0.2em;}
 }
 
 
-@media only screen and (max-width: 240px) {
+@media only screen and (max-width: 260px) {
 
 
   .Subtitle-download {
-    width: 80%;
+    width: auto;
     margin: 0 auto;}
 
   .movie-critics {
@@ -704,6 +760,18 @@ margin-bottom: 0.2em;}
     .flex i, .flex a{
       margin-right: 20px;
     }
+}
+
+
+@media only screen and (max-width: 230px) {
+
+.download-box-mobile .download-links i {
+        display: none;
+      }
+
+.center-row {
+        padding: 0em 0.5em;
+      }
 }
 
 @media only screen and (max-width: 200px) {
