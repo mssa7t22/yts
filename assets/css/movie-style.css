@@ -355,7 +355,7 @@ border: 3px solid var(--clr-primary);
 
 .center-row {
   margin: 0 auto;
-  padding: 0em 2em;
+  padding: 0.5em 2em;
 }
 
 #similar {display: block;}
@@ -460,13 +460,6 @@ font-size: 1.3em;
     font-weight: bold;
   }
 
-  .similar-movies-box {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      grid-gap: 0.8em;
-      width: 100%;
-    }
-
 }
 
 
@@ -487,8 +480,6 @@ font-size: 1.3em;
   .flex i, .flex a{
     margin-right: 40px;
   }
-
-
 
 }
 
@@ -608,16 +599,16 @@ margin-bottom: 0.2em;}
 
 .keywords-box {order: 4;}
 
-.similar-movies-box {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 0.8em;
-    width: 70%;
+.similar-movies-box, #similar {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 390px) {
 
+  .center-row {
+    padding: 0.5em 1em;
+  }
 .download-box-mobile {
     display: block !important;
     margin-top: 0;
@@ -637,9 +628,6 @@ margin-bottom: 0.2em;}
   display: none;
 }
 
-.similar-movies-box, #similar {
-    display: none;
-  }
 
 .download-box {display: none !important;}
 .download-box-mobile .download-links {
@@ -648,9 +636,7 @@ margin-bottom: 0.2em;}
     grid-gap: 0.3em;
   }
 
-  .center-row {
-    padding: 0em 1em;
-  }
+
 
 
 }
@@ -716,7 +702,8 @@ margin-bottom: 0.2em;}
   .Subtitle-download {
     display: flex;
     justify-content: center;
-    align-items: center; width: 85%;
+    align-items: center;
+    width: 85%;
     margin: 0 auto;}
 
 .download-box-mobile .download-links {
@@ -770,7 +757,7 @@ margin-bottom: 0.2em;}
       }
 
 .center-row {
-        padding: 0em 0.5em;
+        padding: 0.5em;
       }
 }
 
@@ -780,7 +767,7 @@ margin-bottom: 0.2em;}
     grid-column-gap: 1.5em;}
 
   .Subtitle-download {
-    width:75%;
+    width:65%;
     margin: 0 auto;}
 
 }
