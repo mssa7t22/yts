@@ -1,7 +1,7 @@
 section .main {
   padding-top: 3em;
   width: 100%;
-  padding-bottom: 3em;
+  padding-bottom: 0.5em;
 }
 
 .wrapper {
@@ -126,7 +126,7 @@ font-style:oblique;
 }
 
 .keywords-box-mobile {
-  display: none;
+  display: none !important;
   padding-bottom: 1.3em;
 }
 
@@ -354,12 +354,6 @@ border-radius: 3px;
     grid-gap: 0.3em;
   }
 
- .keywords-links {
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 0.3em;
-  }
-
-
 }
 
 
@@ -403,11 +397,16 @@ font-size: 1.3em;
 
 }
 
-@media only screen and (max-width:620px) {
+@media only screen and (max-width:640px) {
 
   .second-column .movie-general-details #movie-title {
     font-size: 1.8em;
   }
+
+  .keywords-links {
+     grid-template-columns: repeat(3,1fr);
+     grid-gap: 0.3em;
+   }
 }
 
 @media only screen and (max-width: 585px) {
@@ -492,7 +491,7 @@ margin-right: 0.4em;
 section .main {
     padding-top: 1em;
     width: 100%;
-    padding-bottom: 2em;
+    padding-bottom: 0.8em;
   }
 
   .movie-details {
@@ -516,7 +515,10 @@ section .main {
 
 .second-column .movie-general-details {display: none;}
 
-.download-box {margin-top: 0;}
+.download-box {
+  margin-top: 0;
+  margin-top: 0.5em;
+}
 
 .Subtitle-download {
     padding: 4px 6px;
@@ -527,18 +529,18 @@ section .main {
   }
 
 .keywords-box-mobile {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
 
 }
 
 .keywords-links-mobile {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(5,1fr);
   grid-gap: 0.3em;
 }
 
-.keywords-box-mobile p {
+.keywords-box-mobile p, .download-box-mobile p {
   color: var(--clr-white);
   margin-bottom: 0.3em;
   font-size: 1em;
@@ -548,7 +550,7 @@ section .main {
 .Subtitle-download i {margin-right: 5px;}
 
 .movie-critics {order: 1;
-margin-bottom: 0.5em;}
+margin-bottom: 0.2em;}
 
 .download-box {order:2;}
 
@@ -603,7 +605,10 @@ margin-bottom: 0.5em;}
 
 .download-box-mobile {
   display: block !important;
+  margin-top: 0;
+  margin-top: 0.5em;
 }
+
 .download-box-mobile .download-links {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -628,7 +633,7 @@ margin-bottom: 0.5em;}
 
 }
 
-@media only screen and (max-width: 290px) {
+@media only screen and (max-width: 300px) {
   section .main {
     padding-top: 1em;
     padding-bottom: 0em;
@@ -648,7 +653,10 @@ margin-bottom: 0.5em;}
 
   #movie-title, .movie-details-mobile .movie-general-details {margin-bottom: 0.3em;text-align: center;}
 
-  .download-box {width: auto;}
+  .download-box {
+    width: auto;
+      }
+
   .Subtitle-download {
     display: flex;
     justify-content: center;
