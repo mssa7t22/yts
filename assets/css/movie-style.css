@@ -368,6 +368,13 @@ border: 3px solid var(--clr-primary);
 
 .third-column-row p {display: block !important;}
 
+.third-column-row .similar-movies-box {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 0.8em;
+  width: 100%;
+}
+
 .third-column-row .similar-movies-box img {
 width: 100%;
 height: auto;
@@ -375,15 +382,10 @@ border: 3px solid var(--clr-white);
 border-radius: 3px;
 }
 
-.similar-movies-box {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-gap: 0.8em;
-  width: 100%;
+
+.third-column-row .similar-movies-box img:hover {
+  border: 3px solid var(--clr-primary);
 }
-
-
-
 
 }
 
@@ -764,5 +766,4 @@ margin-bottom: 0.2em;}
   .Subtitle-download {
     width:65%;
     margin: 0 auto;}
-
 }
