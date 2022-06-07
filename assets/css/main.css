@@ -408,14 +408,23 @@ nav .nav-items .nav-text {
 
 
 
-@media only screen and (max-width:360px)
-{
+@media only screen and (max-width:360px) {
+  nav .nav-items .logo img{
+    width: 65px;
+    height: 20px;
+  }
+
+  nav .nav-items .nav-list .mobile .nav-list-icons {
+    font-size: 1.2em;
+  }
 
   .browsing-icons .browsing-icons-container {
     padding: 2em 1.5em;
     grid-template-columns:repeat(3,1fr);
     grid-column-gap: 3em;
   }
+
+
 }
 
 @media only screen and (max-width:290px)
@@ -435,4 +444,19 @@ nav .nav-items .nav-text {
   }
 
 
+}
+
+@media only screen and (max-width:266px){
+
+  nav .nav-items .nav-list .mobile .nav-list-icons {
+    font-size: 0.9em;
+    padding-left: 0.7em !important;
+  }
+}
+
+@media only screen and (max-width:212px){
+
+  nav .nav-items .nav-list .mobile {
+    display: none;
+  }
 }
